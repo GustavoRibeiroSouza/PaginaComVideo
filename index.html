@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gustavo Ribeiro de souza">
+    <meta name="description" content="Site com video">
+    <meta name="keywords" content="HTLM5, CSS3, Projeto">
+    <link rel="stylesheet" href="/Nova pasta/estilo.css">
+    <title>SITE LANDING PAGE</title>
+</head>
+<body>
+    <section class="showcase ">
+    <header>
+        <h2 class="logo">Viagem</h2>
+        <div class="toggle "></div>
+    </header>
+    <video src="/Nova pasta/mixkit-raft-going-slowly-down-a-river-1218.mp4" muted  loop autoplay></video>
+
+    <div class="overlay"></div>
+    <div class="text">
+        <h2>Never Stop</h2>
+        <h3>Exploring the World</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt id sed modi quibusdam at mollitia, numquam veritatis iure.
+             Blanditiis dolorum aliquam nihil tempora laborum recusandae, aut dicta tenetur similique aspernatur!</p>
+        <a href="#">Explore</a>
+    </div>
+    <ul class="social">
+        <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png" alt=""></a></li>
+        <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png" alt=""></a></li>
+        <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png" alt=""></a></li>
+    </ul>
+ </section>
+    <div class="menu">
+        <ul>
+           <li><a href="Home">Home</a></li>
+           <li><a href="News">News</a></li> 
+           <li><a href="Destination">Destination</a></li> 
+           <li><a href="Blog">Blog</a></li> 
+           <li><a href="Contact">Contact</a></li>  
+            
+        </ul>
+    </div>
+
+
+
+    <script>
+       const menuToggle = document.querySelector('.toggle');
+      const showcase = document.querySelector('.showcase');
+
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+      })
+    </script>
+</body>
+</html>
